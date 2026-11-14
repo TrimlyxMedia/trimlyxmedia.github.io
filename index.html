@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trimlyx Medya | Creative Studio</title>
+<meta name="description" content="Trimlyx Medya: sosyal medya, marka kimliği, web ve video. Her tasarım insan onayından geçer. / Social media, brand identity, web and video. Every design human-reviewed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f4ee;--fg:#16140f;--mut:#6b655a;--card:#fffdf8;--line:#e2dccd;--acc:#d9481c;--accfg:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12110e;--fg:#f2ede2;--mut:#a39c8c;--card:#1b1914;--line:#2e2b23;--acc:#ff6a3d;--accfg:#12110e}}
+:root[data-theme=dark]{--bg:#12110e;--fg:#f2ede2;--mut:#a39c8c;--card:#1b1914;--line:#2e2b23;--acc:#ff6a3d;--accfg:#12110e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "DM Sans",system-ui,sans-serif;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.08;margin:0;text-wrap:balance}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto}
+html[lang=tr] .en,html[lang=en] .tr{display:none!important}
+header{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;text-decoration:none}
+.logo b{color:var(--acc)}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:14px}
+nav a{text-decoration:none;color:var(--mut)}
+nav a:hover{color:var(--fg)}
+.sw{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.sw button{font:700 12px "DM Sans";padding:6px 12px;border:0;background:none;color:var(--mut);cursor:pointer}
+html[lang=tr] .sw .bt,html[lang=en] .sw .be{background:var(--fg);color:var(--bg)}
+.hero{padding:64px 0 48px}
+.kick{font:700 12px "DM Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.hero h1{font-size:clamp(38px,7vw,78px);font-weight:800;letter-spacing:-.03em;margin:14px 0 18px;max-width:14ch}
+.hero p{font-size:18px;color:var(--mut);max-width:56ch;margin:0 0 26px}
+.btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;margin:0 8px 8px 0}
+.btn.o{background:none;color:var(--fg);border:1px solid var(--line)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.02em;margin:8px 0 28px}
+.g{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
+.c h3{font-size:21px;margin-bottom:8px}
+.c p{margin:0;color:var(--mut);font-size:15px}
+.price{font:800 30px "Bricolage Grotesque";margin:6px 0 2px;letter-spacing:-.02em}
+.price small{font:500 13px "DM Sans";color:var(--mut)}
+ul{padding-left:18px;margin:12px 0 0;color:var(--mut);font-size:15px}
+li{margin:4px 0}
+.hot{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.tag{display:inline-block;font:700 11px "DM Sans";letter-spacing:.1em;text-transform:uppercase;background:var(--acc);color:var(--accfg);padding:3px 9px;border-radius:99px;margin-bottom:8px}
+.note{font-size:13px;color:var(--mut);margin-top:18px;max-width:70ch}
+.steps{counter-reset:s;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.steps .c:before{counter-increment:s;content:"0" counter(s);font:800 14px "Bricolage Grotesque";color:var(--acc);display:block;margin-bottom:6px}
+.big{font:800 clamp(22px,3.4vw,34px) "Bricolage Grotesque";letter-spacing:-.02em;word-break:break-word}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+ <a class="logo" href="#top">Trimlyx<b>.</b></a>
+ <nav>
+  <a href="#services"><span class="tr">Hizmetler</span><span class="en">Services</span></a>
+  <a href="#pricing"><span class="tr">Fiyatlar</span><span class="en">Pricing</span></a>
+  <a href="#process"><span class="tr">Süreç</span><span class="en">Process</span></a>
+  <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
+  <span class="sw"><button class="bt" onclick="L('tr')">TR</button><button class="be" onclick="L('en')">EN</button></span>
+ </nav>
+</header>
+
+<div class="hero" id="top">
+ <div class="kick">Trimlyx Medya Ajans · Kadıköy, İstanbul</div>
+ <h1><span class="tr">Markanız için yaratıcı stüdyo.</span><span class="en">A creative studio for your brand.</span></h1>
+ <p><span class="tr">Sosyal medya, marka kimliği, web sitesi ve video. İnsan yönetir, yapay zekâ üretir: her tasarım teslimden önce ekibimizce gözden geçirilir.</span><span class="en">Social media, brand identity, web and video. People direct, AI produces: every design is reviewed by our team before delivery.</span></p>
+ <a class="btn" href="#pricing"><span class="tr">Fiyatları gör</span><span class="en">See pricing</span></a>
+ <a class="btn o" href="#contact"><span class="tr">Teklif al</span><span class="en">Get a quote</span></a>
+</div>
+
+<section id="services">
+ <div class="kick"><span class="tr">Hizmetler</span><span class="en">Services</span></div>
+ <h2><span class="tr">Ne yapıyoruz</span><span class="en">What we do</span></h2>
+ <div class="g">
+  <div class="c"><h3><span class="tr">Sosyal medya yönetimi</span><span class="en">Social media management</span></h3><p><span class="tr">Strateji, aylık içerik takvimi, görsel ve Reels üretimi, topluluk yönetimi.</span><span class="en">Strategy, monthly content calendar, visuals and Reels, community management.</span></p></div>
+  <div class="c"><h3><span class="tr">Marka kimliği</span><span class="en">Brand identity</span></h3><p><span class="tr">Logo, renk, tipografi ve kullanım kılavuzu. Tüm mecralarda tutarlı görünüm.</span><span class="en">Logo, colour, typography and guidelines for a consistent look everywhere.</span></p></div>
+  <div class="c"><h3><span class="tr">Web sitesi</span><span class="en">Websites</span></h3><p><span class="tr">Hızlı, mobil uyumlu, çift dilli tek sayfa ve kurumsal siteler.</span><span class="en">Fast, mobile-friendly, bilingual one-page and corporate sites.</span></p></div>
+  <div class="c"><h3><span class="tr">Video ve hareketli tasarım</span><span class="en">Video and motion</span></h3><p><span class="tr">Tanıtım filmleri, Reels, motion grafik ve sosyal medya videoları.</span><span class="en">Promo films, Reels, motion graphics and social videos.</span></p></div>
+  <div class="c"><h3><span class="tr">3D ve ürün görseli</span><span class="en">3D and product visuals</span></h3><p><span class="tr">Ürün render'ları, mekân görselleştirme, katalog ve sunum tasarımı.</span><span class="en">Product renders, space visualisation, catalogue and deck design.</span></p></div>
+ </div>
+</section>
+
+<section id="pricing">
+ <div class="kick"><span class="tr">Fiyatlar</span><span class="en">Pricing</span></div>
+ <h2><span class="tr">Şeffaf başlangıç fiyatları</span><span class="en">Transparent starting prices</span></h2>
+ <div class="g">
+  <div class="c"><h3>Starter</h3><p><span class="tr">Yeni başlayan işletmeler</span><span class="en">For new businesses</span></p><div class="price">14.000 ₺<small> <span class="tr">/ ay</span><span class="en">/ mo</span></small></div>
+   <ul><li><span class="tr">2 platform</span><span class="en">2 platforms</span></li><li><span class="tr">12 görsel + 4 Reels</span><span class="en">12 visuals + 4 Reels</span></li><li><span class="tr">İçerik takvimi</span><span class="en">Content calendar</span></li></ul></div>
+  <div class="c hot"><span class="tag"><span class="tr">Popüler</span><span class="en">Popular</span></span><h3>Growth</h3><p><span class="tr">Düzenli büyümek isteyenler</span><span class="en">For steady growth</span></p><div class="price">28.000 ₺<small> <span class="tr">/ ay</span><span class="en">/ mo</span></small></div>
+   <ul><li><span class="tr">3 platform</span><span class="en">3 platforms</span></li><li><span class="tr">20 görsel + 8 Reels</span><span class="en">20 visuals + 8 Reels</span></li><li><span class="tr">Topluluk yönetimi</span><span class="en">Community management</span></li><li><span class="tr">Aylık rapor</span><span class="en">Monthly report</span></li></ul></div>
+  <div class="c"><h3>Pro</h3><p><span class="tr">Tam kapsamlı yönetim</span><span class="en">Full-scope management</span></p><div class="price">48.000 ₺<small> <span class="tr">/ ay</span><span class="en">/ mo</span></small></div>
+   <ul><li><span class="tr">4 platform</span><span class="en">4 platforms</span></li><li><span class="tr">30 görsel + 12 video</span><span class="en">30 visuals + 12 videos</span></li><li><span class="tr">Reklam yönetimi (bütçe hariç)</span><span class="en">Ads management (budget excluded)</span></li><li><span class="tr">Strateji toplantısı yerine yazılı rapor</span><span class="en">Written strategy report, no meetings</span></li></ul></div>
+ </div>
+ <div class="g" style="margin-top:16px">
+  <div class="c"><h3><span class="tr">Logo ve kimlik</span><span class="en">Logo and identity</span></h3><div class="price">12.000 ₺<small> <span class="tr">'den</span><span class="en">from</span></small></div><p><span class="tr">Logo, renk, tipografi, kılavuz</span><span class="en">Logo, colour, type, guidelines</span></p></div>
+  <div class="c"><h3><span class="tr">Tek sayfa web sitesi</span><span class="en">One-page website</span></h3><div class="price">18.000 ₺<small> <span class="tr">'den</span><span class="en">from</span></small></div><p><span class="tr">TR/EN, mobil uyumlu, yayın dahil</span><span class="en">TR/EN, responsive, launch included</span></p></div>
+  <div class="c"><h3><span class="tr">Kurumsal web sitesi</span><span class="en">Corporate website</span></h3><div class="price">40.000 ₺<small> <span class="tr">'den</span><span class="en">from</span></small></div><p><span class="tr">Çok sayfalı, SEO temeli, yönetim paneli</span><span class="en">Multi-page, SEO basics, CMS</span></p></div>
+  <div class="c"><h3><span class="tr">Tanıtım / Reels videosu</span><span class="en">Promo / Reels video</span></h3><div class="price">6.000 ₺<small> <span class="tr">'den</span><span class="en">from</span></small></div><p><span class="tr">Kurgu, motion, ses tasarımı</span><span class="en">Edit, motion, sound design</span></p></div>
+  <div class="c"><h3><span class="tr">3D ürün görseli</span><span class="en">3D product visual</span></h3><div class="price">4.500 ₺<small> <span class="tr">'den</span><span class="en">from</span></small></div><p><span class="tr">Stüdyo kalitesinde render</span><span class="en">Studio-quality render</span></p></div>
+ </div>
+ <p class="note"><span class="tr">Fiyatlar Türk lirası ve KDV hariç başlangıç fiyatlarıdır; kapsama göre kesin teklif yazılı olarak verilir. Yurt dışı müşteriler için EUR/USD teklif hazırlanır. Sözleşme imzasında %50 avans alınır.</span><span class="en">Prices are starting prices in Turkish lira, excluding VAT; a firm written quote follows the scope. EUR/USD quotes are available for international clients. 50% advance on signing the contract.</span></p>
+</section>
+
+<section id="process">
+ <div class="kick"><span class="tr">Süreç</span><span class="en">Process</span></div>
+ <h2><span class="tr">Yazılı, hızlı, insan onaylı</span><span class="en">Written, fast, human-approved</span></h2>
+ <div class="steps">
+  <div class="c"><h3><span class="tr">Brief</span><span class="en">Brief</span></h3><p><span class="tr">İngilizce brief formunu doldurun, toplantı gerekmez.</span><span class="en">Fill in the English brief form. No meetings needed.</span></p></div>
+  <div class="c"><h3><span class="tr">Teklif ve sözleşme</span><span class="en">Quote and contract</span></h3><p><span class="tr">TR/EN sözleşme, e-imza, %50 avans.</span><span class="en">TR/EN contract, e-signature, 50% advance.</span></p></div>
+  <div class="c"><h3><span class="tr">Üretim</span><span class="en">Production</span></h3><p><span class="tr">Yapay zekâ destekli hızlı üretim; her çıktı ekibimizce incelenir.</span><span class="en">AI-assisted fast production; every output is reviewed by our team.</span></p></div>
+  <div class="c"><h3><span class="tr">Teslim</span><span class="en">Delivery</span></h3><p><span class="tr">İnsan onayından sonra teslim, revizyon hakkı dahil.</span><span class="en">Delivered after human approval, revisions included.</span></p></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="kick"><span class="tr">İletişim</span><span class="en">Contact</span></div>
+ <h2><span class="tr">Projenizi yazın</span><span class="en">Tell us about your project</span></h2>
+ <div class="big"><a href="mailto:team@trimlyxmedia.com">team@trimlyxmedia.com</a></div>
+ <p class="note"><span class="tr">Tüm iletişim yazılı ve e-posta ile yürütülür. Kadıköy, İstanbul.</span><span class="en">All communication is written and by email. Kadıköy, Istanbul.</span></p>
+</section>
+
+<footer>
+ © 2026 Trimlyx Medya Ajans Ltd. Şti. · <span class="tr">Portföydeki konsept işler kurgusaldır ve yapay zekâ destekli üretilmiştir; tüm hakları saklıdır.</span><span class="en">Concept work shown is fictional and AI-assisted; all rights reserved.</span>
+</footer>
+</div>
+<script>
+function L(l){document.documentElement.lang=l;try{localStorage.setItem('l',l)}catch(e){}}
+(function(){var l;try{l=localStorage.getItem('l')}catch(e){}
+if(!l)l=(navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en';
+document.documentElement.lang=l})();
+</script>
+</body>
+</html>
