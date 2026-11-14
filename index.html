@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='32' y='50' font-size='54' font-family='Georgia,serif' font-weight='900' text-anchor='middle' fill='%23e4ff00'%3EX%3C/text%3E%3C/svg%3E">
 <title>TrimlyX Media | Kadıköy Dijital Medya Ajansı, Sosyal Medya, Web, Video</title>
 <meta name="description" content="TrimlyX Media (Trimlyx Medya Ajans), Kadıköy İstanbul: sosyal medya yönetimi, marka kimliği, web sitesi ve video. Şeffaf başlangıç fiyatları, her tasarım insan onaylı. / Social media, branding, web and video studio in Istanbul.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='32' y='50' font-size='54' font-family='Georgia,serif' font-weight='900' text-anchor='middle' fill='%23e4ff00'%3EX%3C/text%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-kNfLsLJUupw+umjMtvHu7wg/dOkfZ27eJ4XZ5rhCSuI='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://trimlyxmedia.github.io/">
 <meta property="og:type" content="website">
@@ -74,7 +76,7 @@ footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--mut);fon
   <a href="#pricing"><span class="tr">Fiyatlar</span><span class="en">Pricing</span></a>
   <a href="#process"><span class="tr">Süreç</span><span class="en">Process</span></a>
   <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
-  <span class="sw"><button class="bt" onclick="L('tr')">TR</button><button class="be" onclick="L('en')">EN</button></span>
+  <span class="sw"><button class="bt" data-l="tr">TR</button><button class="be" data-l="en">EN</button></span>
  </nav>
 </header>
 
@@ -146,7 +148,8 @@ footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--mut);fon
 function L(l){document.documentElement.lang=l;try{localStorage.setItem('l',l)}catch(e){}}
 (function(){var l;try{l=localStorage.getItem('l')}catch(e){}
 if(!l)l=(navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en';
-document.documentElement.lang=l})();
+document.documentElement.lang=l;
+document.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){L(b.dataset.l)})})})();
 </script>
 </body>
 </html>
